@@ -1,0 +1,39 @@
+{
+  "name": "nodejs_pix_mercadopago",
+  "version": "1.0.0",
+  "description": "modelo de Integração pix usando Mercado Pago",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx --watch src/server.ts",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipefernandesdev/nodejs_pix_mercadopago.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipefernandesdev/nodejs_pix_mercadopago/issues"
+  },
+  "homepage": "https://github.com/felipefernandesdev/nodejs_pix_mercadopago#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mercadopago": "^2.3.0",
+    "morgan": "^1.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/helmet": "^0.0.48",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.13.1"
+  }
+}
