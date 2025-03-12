@@ -1,5 +1,6 @@
 import { Router, Request, Response } from "express";
 import { payment } from "./mercadopago.js";
+import { PaymentResponse } from "./types/pix_return_type.js";
 
 export const routes = Router();
 
@@ -24,6 +25,7 @@ routes.post("/pix", (request: Request, response: Response) => {
     .create(payload)
     .then((res: any) => {
       console.log(res);
+      res as PaymentResponse;
       response.status(200).json(res.point_of_interaction.transaction_data);
     })
     .catch((error) => {
